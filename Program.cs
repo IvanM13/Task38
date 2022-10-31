@@ -2,25 +2,25 @@
 
 [3 7 22 2 78] -> 76*/
 
-double[] arrayRealNumbers = new double[5];
-for (int i = 0; i < arrayRealNumbers.Length; i++)
+double[] arrayRandom = new double[5];
+for (int i = 0; i < arrayRandom.Length; i++)
 {
-    arrayRealNumbers[i] = new Random().Next(1, 100);
-    Console.Write(arrayRealNumbers[i] + " ");
+    arrayRandom[i] = new Random().Next(1, 100);
+    Console.Write(arrayRandom[i] + " ");
 }
 
-double maxNumber = arrayRealNumbers[0];
-double minNumber = arrayRealNumbers[0];
+double maxNumber = arrayRandom[0];
+double minNumber = arrayRandom[0];
 
-for (int i = 1; i < arrayRealNumbers.Length; i++)
+for (int i = 1; i < arrayRandom.Length; i++)
 {
-    if (maxNumber < arrayRealNumbers[i])
+    if (maxNumber < arrayRandom[i])
     {
-        maxNumber = arrayRealNumbers[i];
+        maxNumber = arrayRandom[i];
     }
-    if (minNumber > arrayRealNumbers[i])
+    if (minNumber > arrayRandom[i])
     {
-        minNumber = arrayRealNumbers[i];
+        minNumber = arrayRandom[i];
     }
 }
 
